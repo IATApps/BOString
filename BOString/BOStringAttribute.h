@@ -55,6 +55,6 @@
  *
  *	range(NSMakeRange(0, self.stringLength));
  */
-- (void(^)())stringRange;
+- (void(^)(void))stringRange;
 
 @end
