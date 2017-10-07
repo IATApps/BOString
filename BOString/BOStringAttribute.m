@@ -15,7 +15,7 @@
     return self;
 }
 
-- (void(^)())stringRange
+- (void(^)(void))stringRange
 {
     return ^{
         _attributeRange = NSMakeRange(0, _stringLength);
