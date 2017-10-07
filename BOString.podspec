@@ -9,9 +9,11 @@ Pod::Spec.new do |s|
   s.source_files = 'BOString/*.{h,m}'
 
   s.ios.deployment_target = '6.0' # should be fine with ios 5 and 4. Can anyone test? :)
+  s.tvos.deployment_target = '10.0' # should be fine on earlier versions. Can anyone test? :)
   s.osx.deployment_target = '10.9' # should be fine on earlier versions. Can anyone test? :)
   
   s.ios.frameworks = 'Foundation', 'UIKit'
+  s.tvos.frameworks = 'Foundation', 'UIKit'
   s.osx.frameworks = 'Foundation', 'AppKit'
   
   s.requires_arc = true
